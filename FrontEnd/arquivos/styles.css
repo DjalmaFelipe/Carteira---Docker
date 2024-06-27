@@ -1,0 +1,54 @@
+/* client/styles.css */
+body {
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 1260px;
+}
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 22px);
+}
+
+button {
+    border-style: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#inserir {
+    background-color: green;
+}
+
+#retirar {
+    background-color: red;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}

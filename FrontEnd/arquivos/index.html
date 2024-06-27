@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+    <div id="app">
+        <h1>Carteira</h1>
+        <div id="balance"></div>
+        <div>
+            <input type="number" id="amount" placeholder="valor">
+            <button id="inserir" onclick="addMoney()">Inserir</button>
+            <button id="retirar" onclick="withdrawMoney()">Retirar</button>
+        </div>
+        <h2>Movimentações</h2>
+        <ul id="history"></ul>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
