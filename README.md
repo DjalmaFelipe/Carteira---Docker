@@ -5,7 +5,7 @@ Aplicação de carteira com as funções de saldo, saque, depósito e histórico
 
 ## INSTRUÇÕES DE USO:
 
-### PASSO 1: INSTALAR O DOCKER
+### PASSO 1 - INSTALAR O DOCKER
 
 Desinstale versões anteriores
 
@@ -54,7 +54,7 @@ sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
  sudo rm -rf /var/lib/containerd 
 ```
 
-### PASSO 2: IMPLEMENTAR O POSTGRES
+### PASSO 2 - IMPLEMENTAR O POSTGRES
 
 baixe a imagem do postgres:
 
@@ -91,13 +91,13 @@ CREATE TABLE transactions (
 
 navegue até o diretório BackEnd e aplique os seguintes comandos:
 
--para construir a imagem
+para construir a imagem
 
 ``` 
 docker build -t backend .
 ```
 
-- executar o container
+executar o container
 ```
 docker run --name container-node -p 5000:5000 -d backend
 ```
@@ -106,13 +106,13 @@ docker run --name container-node -p 5000:5000 -d backend
 
 navegue até o diretório FrontEnd e execute os seguintes comandos:
 
-- para construir a imagem
+para construir a imagem
 
 ``` 
 docker build -t frontend .
 ```
 
--para executar o container
+para executar o container
 
 ``` 
 docker run --name container-frontend -p 8080:80 -d meu-frontend
