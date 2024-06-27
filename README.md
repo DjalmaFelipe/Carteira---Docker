@@ -33,15 +33,21 @@ sudo apt-get update
 
 instale o docker
 
-``` sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin ``` 
+``` 
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+``` 
 
 verificando o funcionamento:
 
-``` sudo docker run hello-world ```
+``` 
+sudo docker run hello-world
+```
 
 para desinstalar use:
 
-``` sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras ```
+```
+sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras 
+```
 
 ```
  sudo rm -rf /var/lib/docker
@@ -52,15 +58,21 @@ para desinstalar use:
 
 baixe a imagem do postgres:
 
-``` docker pull postgres ```
+```
+docker pull postgres
+```
 
 crie um volume:
 
-``` docker volume create *meu-volume* ```
+```
+docker volume create *meu-volume*
+```
 
 execute o container do banco com suas configurações:
 
-``` docker run --name *projeto* -e POSTGRES_PASSWORD=*1234* -p 5432:5432 -v *meu_volume*:/var/lib/postgresql/data -d postgres ```
+``` 
+docker run --name *projeto* -e POSTGRES_PASSWORD=*1234* -p 5432:5432 -v *meu_volume*:/var/lib/postgresql/data -d postgres
+```
 
 *** Os valores cercados por asteriscos devem ser modificados conforme a necessidade.
 
@@ -81,10 +93,14 @@ navegue até o diretório BackEnd e aplique os seguintes comandos:
 
 -para construir a imagem
 
-``` docker build -t backend . ```
+``` 
+docker build -t backend .
+```
 
 - executar o container
-``` docker run --name container-node -p 5000:5000 -d backend ```
+```
+docker run --name container-node -p 5000:5000 -d backend
+```
 
 ### PASSO 4 - IMPLEMENTAR O FRONTEND JAVASCRIPT COM NGINX
 
@@ -92,8 +108,12 @@ navegue até o diretório FrontEnd e execute os seguintes comandos:
 
 - para construir a imagem
 
-``` docker build -t frontend . ```
+``` 
+docker build -t frontend .
+```
 
 -para executar o container
 
-``` docker run --name container-frontend -p 8080:80 -d meu-frontend ```
+``` 
+docker run --name container-frontend -p 8080:80 -d meu-frontend
+```
