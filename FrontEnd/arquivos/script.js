@@ -1,5 +1,4 @@
-// client/script.js
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'API_URL_PLACEHOLDER';
 
 async function fetchBalance() {
   const response = await fetch(`${API_URL}/balance`);

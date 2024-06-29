@@ -1,4 +1,5 @@
 FROM nginx:latest
 COPY ./arquivos /usr/share/nginx/html
+RUN sed -i 's|API_URL_PLACEHOLDER|${API_URL}|g' /usr/share/nginx/html/script.js
 RUN chown -R nginx:nginx /usr/share/nginx/html
 EXPOSE 80

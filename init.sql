@@ -1,0 +1,6 @@
+CREATE TABLE transactions (
+    id SERIAL PRIMARY KEY,
+    amount NUMERIC NOT NULL,
+    type VARCHAR(10) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
